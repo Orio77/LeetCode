@@ -1,0 +1,1 @@
+Write manual (no JUnit) test for my method. Try to break it. Make each step visible. Write them in the main method
