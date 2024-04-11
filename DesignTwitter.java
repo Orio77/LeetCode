@@ -5,22 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
-public class DesignTwitter {
-    public static void main(String[] args) {
-        Twitter twitter = new Twitter();
-
-        twitter.postTweet(1, 5);
-        System.out.println(twitter.getNewsFeed(1));
-        twitter.follow(1, 2);
-        twitter.postTweet(2, 6);
-        System.out.println(twitter.getNewsFeed(1));
-        twitter.unfollow(1, 2);
-        System.out.println(twitter.getNewsFeed(5));
-    }
-}
-
-
-
 class Twitter {
     private HashMap<Integer, Set<Integer>> followers;
     private List<int[]> newsFeed;  // int[]{userId, tweetId}

@@ -1,11 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class InsertInterval {
-    public static void main(String[] args) {
-        
-    }
-}
+
 
 
 class MySolution {

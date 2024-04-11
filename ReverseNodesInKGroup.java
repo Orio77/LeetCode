@@ -1,38 +1,8 @@
 import java.util.Stack;
 
-public class ReverseNodesInKGroup {
-    public static void main(String[] args) {
-        Kol sol = new Kol();
-
-        ListNode head = new ListNode(0);
-        ListNode one = new ListNode(1);
-        ListNode two = new ListNode(2);
-        ListNode three = new ListNode(3);
-        ListNode four = new ListNode(4);
-        ListNode five = new ListNode(5);
-
-        head.next = one;
-        one.next = two;
-        two.next = three;
-        three.next = four;
-        four.next = five;
 
 
-        sol.reverseKGroup(head, 2);
-        showList(head);
-    }
-
-    public static void showList(ListNode head) {
-        ListNode curr = head;
-        while (curr != null) {
-            System.out.print(curr.val + " -> ");
-            curr = curr.next;
-        }
-    }
-}
-
-
-class Kol {
+class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
         
         // Create a stack

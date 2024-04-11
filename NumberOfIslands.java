@@ -1,27 +1,6 @@
-public class NumberOfIslands {
-    public static void main(String[] args) {
-        Islands il = new Islands();
-
-        char[][] grid1 = {
-            {'1','1','1','1','0'},
-            {'1','1','0','1','0'},
-            {'1','1','0','0','0'},
-            {'0','0','0','0','0'}
-        };
-        System.out.println(il.numIslands(grid1)); // Output: 1
-
-        char[][] grid2 = {
-            {'1','1','0','0','0'},
-            {'1','1','0','0','0'},
-            {'0','0','1','0','0'},
-            {'0','0','0','1','1'}
-        };
-        System.out.println(il.numIslands(grid2)); // Output: 3
-    }
-}
 
 
-class Islands {
+class Solution {
     public int numIslands(char[][] grid) {
         
         // Create boolean[][] visited

@@ -1,22 +1,3 @@
-public class CountGoodNodesInBinaryTree {
-    public static void main(String[] args) {
-        // Create nodes
-        TreeNode node10 = new TreeNode(10);
-        TreeNode node42 = new TreeNode(4);
-        TreeNode node8 = new TreeNode(8, node42, null);
-        TreeNode node4 = new TreeNode(4, node10, node8);
-        TreeNode root = new TreeNode(4, null, node4);
-
-        // Create One instance and call method
-        One One = new One();
-        int result = One.goodNodes(root);
-
-        // Print result
-        System.out.println("Number of good nodes: " + result);
-    }
-}
-
-
 
 /**
  * Definition for a binary tree node.
@@ -33,7 +14,7 @@ public class CountGoodNodesInBinaryTree {
  *     }
  * }
  */
-class One {
+class Solution {
     public int goodNodes(TreeNode root) {
         return helper(root, 0, root.val);
     }

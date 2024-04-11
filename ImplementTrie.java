@@ -1,19 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class ImplementTrie {
-    public static void main(String[] args) {
-        Trie trie = new Trie();
-
-        trie.insert("bfwlofwlfbwebfnwefllnflfwnflqddkwqllfj");
-        trie.insert("bfwlofwlfbwebfnwegllnflfwnflqddkwqllfj");
-        System.out.println(trie.startsWith("bfwlofwlfbwebfnwefllnflfwnflqddkwqllfj"));
-        System.out.println(trie.search("bfwlofwlfbwebfnwefllnflfwnflqddkwqllfj"));
-        System.out.println(trie.search("bfwlofwlfbwebfnwegllnflfwnflqddkwqllfj"));
-        System.out.println(trie.search("bfwlofwlfbwebfnwegllnflfwnflqddkwqllfjk"));
-    }
-}
-
 
 class Trie {
     private Node node;

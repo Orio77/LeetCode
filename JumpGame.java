@@ -1,13 +1,6 @@
-public class JumpGame {
-    public static void main(String[] args) {
-        R sol = new R();
-
-        System.out.println(sol.canJump(new int[]{3,2,1,0,4}));
-    }
-}
 
 
-class R {
+class Solution {
     public boolean canJump(int[] nums) {
         if (nums.length == 1) 
             return true;
